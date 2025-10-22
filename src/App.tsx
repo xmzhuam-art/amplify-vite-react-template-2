@@ -20,8 +20,7 @@ function App() {
   function deleteTodo(id: string) {
     client.models.Todo.delete({ id })
   }
-
-
+  
   return (
     <main>
       <h1>My todos</h1>
