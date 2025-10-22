@@ -44,3 +44,11 @@ function App() {
 }
 
 export default App;
+
+const unsettledPromise = new Promise(() => {
+  // This promise never resolves or rejects
+});
+
+await unsettledPromise;
+
+console.log("This line will not be reached if the promise remains unsettled.");
